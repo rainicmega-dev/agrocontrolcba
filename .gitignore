@@ -1,0 +1,33 @@
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Datos generados (opcional: comentar si se desean versionar los JSON de prueba)
+# data/*.json
+
+# Logs y temporales
+*.log
+*.tmp
+.temp/
