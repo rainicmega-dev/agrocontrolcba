@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """
 AgroControl CBA - Sistema monolítico para gestión de producción, inventario y ventas
 Centro de Biotecnología Agropecuaria - SENA
@@ -9,9 +9,7 @@ import os
 from datetime import datetime
 from pathlib import Path
 
-# ============================================================
-# CONFIGURACIÓN Y RUTAS
-# ============================================================
+
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 ARCHIVOS = {
@@ -21,9 +19,7 @@ ARCHIVOS = {
     "ventas": DATA_DIR / "ventas.json",
 }
 
-# ============================================================
-# PERSISTENCIA JSON
-# ============================================================
+
 def cargar_datos(nombre: str) -> list:
     """Carga una colección desde JSON. Si no existe, retorna lista vacía."""
     ruta = ARCHIVOS[nombre]
@@ -55,9 +51,7 @@ def guardar_todo(productos, lotes, movimientos, ventas) -> None:
     print("  [OK] Datos guardados correctamente.")
 
 
-# ============================================================
-# UTILIDADES
-# ============================================================
+
 def limpiar_pantalla():
     os.system("cls" if os.name == "nt" else "clear")
 
@@ -121,9 +115,7 @@ def generar_id(prefijo: str, coleccion: list, campo: str = "id") -> str:
     return f"{prefijo}{siguiente:03d}"
 
 
-# ============================================================
-# CÁLCULO DE STOCK (regla de negocio clave)
-# ============================================================
+
 def calcular_stock(producto_codigo: str, movimientos: list) -> int:
     """Calcula el stock actual a partir de los movimientos de inventario."""
     stock = 0
@@ -136,9 +128,6 @@ def calcular_stock(producto_codigo: str, movimientos: list) -> int:
     return stock
 
 
-# ============================================================
-# PRODUCTOS
-# ============================================================
 def buscar_producto(productos: list, codigo: str) -> dict | None:
     codigo = codigo.upper().strip()
     for p in productos:
@@ -301,9 +290,7 @@ def menu_productos(productos: list) -> None:
             pausar()
 
 
-# ============================================================
-# LOTES PRODUCTIVOS
-# ============================================================
+
 def buscar_lote(lotes: list, id_lote: str) -> dict | None:
     id_lote = id_lote.upper().strip()
     for l in lotes:
@@ -435,9 +422,6 @@ def menu_lotes(lotes: list, productos: list, movimientos: list) -> None:
             pausar()
 
 
-# ============================================================
-# MOVIMIENTOS DE INVENTARIO
-# ============================================================
 def registrar_entrada(movimientos: list, productos: list) -> None:
     print("\n--- ENTRADA MANUAL DE INVENTARIO ---")
     codigo = leer_texto("  Código del producto: ").upper()
@@ -531,9 +515,6 @@ def menu_inventario(movimientos: list, productos: list) -> None:
             pausar()
 
 
-# ============================================================
-# VENTAS
-# ============================================================
 def registrar_venta(ventas: list, productos: list, movimientos: list) -> None:
     print("\n--- REGISTRAR VENTA ---")
     items = []
@@ -626,9 +607,6 @@ def menu_ventas_consulta(ventas: list) -> None:
     pausar()
 
 
-# ============================================================
-# ALERTAS Y REPORTES
-# ============================================================
 def mostrar_alertas(productos: list, movimientos: list) -> None:
     print("\n--- ALERTAS DE STOCK BAJO ---")
     alertas = []
@@ -720,9 +698,6 @@ def menu_reportes(productos: list, movimientos: list, ventas: list) -> None:
             pausar()
 
 
-# ============================================================
-# MENÚ PRINCIPAL
-# ============================================================
 def mostrar_menu_principal():
     print("\n==================== AGROCONTROL CBA ====================")
     print("  1. Gestión de productos")
