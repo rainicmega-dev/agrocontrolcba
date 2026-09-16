@@ -1,0 +1,47 @@
+[
+  {
+    "codigo": "PAPA CRIOLLA",
+    "nombre": "Papa Criolla",
+    "categoria": "Tuberculos",
+    "unidad": "9 bultos",
+    "precio": 8000.0,
+    "stock_minimo": 10,
+    "activo": false
+  },
+  {
+    "codigo": "P001",
+    "nombre": "Papa Criolla",
+    "categoria": "Tuberculos",
+    "unidad": "1000",
+    "precio": 1000.0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "codigo": "P002",
+    "nombre": "Zanahoria",
+    "categoria": "Tuberculos",
+    "unidad": "50 unidad",
+    "precio": 3000.0,
+    "stock_minimo": 10,
+    "activo": true
+  },
+  {
+    "codigo": "P003",
+    "nombre": "Remolacha",
+    "categoria": "Tuberculos",
+    "unidad": "150",
+    "precio": 1000.0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "codigo": "P004",
+    "nombre": "Coco",
+    "categoria": "Fruta",
+    "unidad": "unidad",
+    "precio": 1000.0,
+    "stock_minimo": 10,
+    "activo": true
+  }
+]

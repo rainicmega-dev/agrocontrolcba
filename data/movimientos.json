@@ -1,0 +1,74 @@
+[
+  {
+    "id": "M0001",
+    "producto_codigo": "P002",
+    "tipo": "ENTRADA",
+    "cantidad": 40,
+    "motivo": "Cosecha lote L001",
+    "fecha": "2026-09-16 14:17"
+  },
+  {
+    "id": "M0002",
+    "producto_codigo": "P001",
+    "tipo": "ENTRADA",
+    "cantidad": 70000,
+    "motivo": "Cosecha lote L002",
+    "fecha": "2026-09-16 14:40"
+  },
+  {
+    "id": "M0003",
+    "producto_codigo": "P002",
+    "tipo": "SALIDA",
+    "cantidad": 2,
+    "motivo": "Venta",
+    "fecha": "2026-09-16 14:43"
+  },
+  {
+    "id": "M0004",
+    "producto_codigo": "P001",
+    "tipo": "ENTRADA",
+    "cantidad": 5,
+    "motivo": "prueba",
+    "fecha": "2026-09-16 14:53"
+  },
+  {
+    "id": "M0005",
+    "producto_codigo": "P001",
+    "tipo": "SALIDA",
+    "cantidad": 8,
+    "motivo": "prueba",
+    "fecha": "2026-09-16 14:54"
+  },
+  {
+    "id": "M0006",
+    "producto_codigo": "P004",
+    "tipo": "ENTRADA",
+    "cantidad": 5,
+    "motivo": "prueba PF005",
+    "fecha": "2026-09-16 15:01"
+  },
+  {
+    "id": "M0007",
+    "producto_codigo": "P001",
+    "tipo": "SALIDA",
+    "cantidad": 3,
+    "motivo": "Venta",
+    "fecha": "2026-09-16 15:11"
+  },
+  {
+    "id": "M0008",
+    "producto_codigo": "P001",
+    "tipo": "SALIDA",
+    "cantidad": 2,
+    "motivo": "Venta",
+    "fecha": "2026-09-16 15:14"
+  },
+  {
+    "id": "M0009",
+    "producto_codigo": "P004",
+    "tipo": "SALIDA",
+    "cantidad": 1,
+    "motivo": "Venta",
+    "fecha": "2026-09-16 15:14"
+  }
+]
